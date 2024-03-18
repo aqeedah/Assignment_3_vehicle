@@ -36,7 +36,7 @@ namespace Assignment_3_vehicle
             agency.AddVehicle(motorcycle, 2);
 
             // Rent a vehicle
-            agency.RentVehicle(0);
+            agency.RentVehicle(car);
 
             // Display total revenue
             Console.WriteLine($"\nTotal Revenue: {agency.TotalRevenue:C}");
