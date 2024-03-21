@@ -13,18 +13,18 @@ namespace Assignment_3_vehicle
         public static void Main(string[] args)
         {
             // Create instances of vehicles
-            Vehicle car = new Car("Civic", "Honda", 2020, 50, 5, "Gasoline", "Automatic", false);
-            Vehicle truck = new Truck("F-150", "Ford", 2018, 100, 3, "Pickup", true);
-            Vehicle motorcycle = new Motorcycle("Ninja", "Kawasaki", 2019, 80, 1000, "Gasoline", true);
+            Vehicle car = new Car("Corolla", "Toyota", 2019, 60, 4, "Petrol", "Automatic", true);
+            Vehicle truck = new Truck("Ram 1500", "Ram", 2017, 80, 2, "Pickup", false);
+            Vehicle motorcycle = new Motorcycle("Sportster", "Harley-Davidson", 2021, 60, 2000, "Petrol", false);
 
             // Display details of vehicles
-            Console.WriteLine("Car Details:");
+            Console.WriteLine("Details of car:");
             car.DisplayDetails();
 
-            Console.WriteLine("\nTruck Details:");
+            Console.WriteLine("\nDetails of Truck:");
             truck.DisplayDetails();
 
-            Console.WriteLine("\nMotorcycle Details:");
+            Console.WriteLine("\nDetails of motorcycle:");
             motorcycle.DisplayDetails();
 
             // Create an instance of RentalAgency
@@ -36,10 +36,10 @@ namespace Assignment_3_vehicle
             agency.AddVehicle(motorcycle, 2);
 
             // Rent a vehicle
-            agency.RentVehicle(car);
+            agency.RentVehicle(motorcycle);
 
             // Display total revenue
-            Console.WriteLine($"\nTotal Revenue: {agency.TotalRevenue:C}");
+            Console.WriteLine($"\nTotal Revenue of vehicle is: {agency.TotalRevenue:C}");
         }
     }
 }

@@ -28,7 +28,7 @@ namespace Assignment_3_vehicle
             Console.WriteLine($"Seats of the car is: {Seats}");
             Console.WriteLine($"Engin Type of car is: {EnginType}");
             Console.WriteLine($"Transmission of car is: {Transmission}");
-            Console.WriteLine($"Is car is convertible: {Convertible}");
+            Console.WriteLine($"Is car is convertible?: {Convertible}");
         }
     }
 }

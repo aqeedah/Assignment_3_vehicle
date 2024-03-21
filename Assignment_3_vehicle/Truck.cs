@@ -26,8 +26,8 @@ namespace Assignment_3_vehicle
         public override void DisplayDetails()
         {
             base.DisplayDetails();
-            Console.WriteLine($"Capacity: {Capacity}");
-            Console.WriteLine($"Truck Type: {TruckType}");
+            Console.WriteLine($"Capacity of the car is: {Capacity}");
+            Console.WriteLine($"Truck Type of the car is: {TruckType}");
             Console.WriteLine($"Four Wheel Drive: {FourWheelDrive}");
         }
     }

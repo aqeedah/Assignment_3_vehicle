@@ -23,9 +23,9 @@ namespace Assignment_3_vehicle
         public override void DisplayDetails()
         {
             base.DisplayDetails();
-            Console.WriteLine($"Engine Capacity: {EngineCapacity}");
-            Console.WriteLine($"Fuel Type: {FuelType}");
-            Console.WriteLine($"Has Fairing: {HasFairing}");
+            Console.WriteLine($"Engine Capacity of Motorcycle is: {EngineCapacity}");
+            Console.WriteLine($"Fuel Type of Motorcycle is: {FuelType}");
+            Console.WriteLine($"Has Motorcycle Fairing?: {HasFairing}");
         }
     }
 }
