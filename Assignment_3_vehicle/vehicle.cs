@@ -7,26 +7,25 @@ using System.Threading.Tasks;
 namespace Assignment_3_vehicle
 {
     public abstract class Vehicle
-{
-    public string Model { get; set; }
-    public string Manufacturer { get; set; }
-    public int Year { get; set; }
-    public decimal RentalPrice { get; set; }
-
-    public Vehicle(string model, string manufacturer, int year, decimal rentalPrice)
     {
-        Model = model;
-        Manufacturer = manufacturer;
-        Year = year;
-        RentalPrice = rentalPrice;
-    }
+        public string Model {  get; set; }
+        public string Menufacturer { get; set; }
+        public int Year {  get; set; }
+        public double RentalPrice {  get; set; }
 
-    public virtual void DisplayDetails()
-    {
-        Console.WriteLine($"Model: {Model}");
-        Console.WriteLine($"Manufacturer: {Manufacturer}");
-        Console.WriteLine($"Year: {Year}");
-        Console.WriteLine($"Rental Price: {RentalPrice}");
+        public Vehicle(string model, string menufacturer, int year, double rentalPrice)
+        {
+            Model = model;
+            Menufacturer = menufacturer;
+            Year = year;
+            RentalPrice = rentalPrice;
+        }
+        public virtual void DisplayDetails()
+        {
+            Console.WriteLine($"Model Name: {Model}");
+            Console.WriteLine($"Manufacturer: {Menufacturer}");
+            Console.WriteLine($"Year is: {Year}");
+            Console.WriteLine($"Rental price is: {RentalPrice}");
+        }
     }
-}
 }

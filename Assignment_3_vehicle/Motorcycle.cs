@@ -12,7 +12,7 @@ namespace Assignment_3_vehicle
         public string FuelType { get; set; }
         public bool HasFairing { get; set; }
 
-        public Motorcycle(string model, string manufacturer, int year, decimal rentalPrice, int engineCapacity, string fuelType, bool hasFairing)
+        public Motorcycle(string model, string manufacturer, int year, Double rentalPrice, int engineCapacity, string fuelType, bool hasFairing)
             : base(model, manufacturer, year, rentalPrice)
         {
             EngineCapacity = engineCapacity;

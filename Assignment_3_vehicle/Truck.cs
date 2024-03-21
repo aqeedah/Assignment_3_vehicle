@@ -14,7 +14,7 @@ namespace Assignment_3_vehicle
         public bool FourWheelDrive { get; set; }
 
         // Constructor
-        public Truck(string model, string manufacturer, int year, decimal rentalPrice, int capacity, string truckType, bool fourWheelDrive)
+        public Truck(string model, string manufacturer, int year, double rentalPrice, int capacity, string truckType, bool fourWheelDrive)
             : base(model, manufacturer, year, rentalPrice)
         {
             Capacity = capacity;
@@ -26,7 +26,9 @@ namespace Assignment_3_vehicle
         public override void DisplayDetails()
         {
             base.DisplayDetails();
-            Console.WriteLine($"Capacity: {Capacity}, Truck Type: {TruckType}, Four Wheel Drive: {FourWheelDrive}");
+            Console.WriteLine($"Capacity: {Capacity}");
+            Console.WriteLine($"Truck Type: {TruckType}");
+            Console.WriteLine($"Four Wheel Drive: {FourWheelDrive}");
         }
     }
 }
